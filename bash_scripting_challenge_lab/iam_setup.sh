@@ -107,8 +107,8 @@ while IFS=',' read -r username fullname group; do
     # Send email (if mail is enabled)
     if [[ "$MAIL_ENABLED" == true ]]; then
         echo "Hello $fullname, your account has been created. Temporary password: $TEMP_PASSWORD" | \
-        mail -s "Account Created" "$username@yourdomain.com"
-        log_action "Email sent to $username@yourdomain.com"
+        mail -s "Account Created" "$username@gmail.com" #I am using gmail for testing, it can be any domain "$username@yourdomain.com"
+        log_action "Email sent to $username@gmail.com"
     fi
 
-# done < "$CSV_FILE"
+ done < "$CSV_FILE"

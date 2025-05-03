@@ -2,7 +2,7 @@
 
 ## 🔐 IAM Automation with Bash on Linux
 
-## 🧪 LAB OVERVIEW
+## LAB OVERVIEW
 
 This lab demonstrates how to **automate Identity and Access Management (IAM)** tasks on a Linux system using a Bash script. The lab simulates a real-world system administrator task of provisioning multiple users and groups with strong security practices.
 
@@ -13,25 +13,24 @@ This lab demonstrates how to **automate Identity and Access Management (IAM)** t
 - Apply password policies and enforce password reset on first login.
 - Secure home directories with strict permissions.
 - Log all actions to a file.
-- (Optional) Send user email notifications and enforce password complexity rules.
-- Package the lab with screenshots, comments, and documentation for grading and review.
+- Send user email notifications and enforce password complexity rules.
 
 ---
 
-## 🖥️ ENVIRONMENT DETAILS
+## ENVIRONMENT DETAILS
 
 - **Operating System**: Ubuntu 22.04 LTS (or any modern Debian-based Linux)
 - **Execution Mode**: Root or sudo privileges required
 - **Tools Used**:
   - `bash` (scripting)
   - `useradd`, `groupadd`, `chage`, `passwd`, `chmod`, `mail`
-  - `mailutils` for email (optional)
+  - `mailutils` for email 
 
 ---
 
-## 🗃️ INPUT FILE FORMAT (`users.txt`)
+## INPUT FILE FORMAT (`users.txt | users.csv`)
 
-The script expects a `.csv` file (named `users.txt` or custom) with the following format:
+The script expects a `.csv` or `.txt` file (named `users.txt`, `users.csv` or custom) with the following format:
   - username,fullname,group
 
 
@@ -39,7 +38,7 @@ This format ensures automation is done without user input during execution.
 
 ---
 
-## 🧾 SCRIPT EXPLANATION (`iam_setup.sh`)
+## SCRIPT EXPLANATION (`iam_setup.sh`)
 
 ### Key Functionalities:
 
@@ -53,22 +52,26 @@ This format ensures automation is done without user input during execution.
 | Permission settings       | Home directories set to `chmod 700` |
 | Logging                   | All actions written to `iam_setup.log` |
 | CSV input support         | Accepts CSV file as command-line argument |
-| Email notification (opt.) | Sends email to user after creation (if `mailutils` installed) |
+| Email notification        | Sends email to user after creation (if `mailutils` installed) |
 
 ---
 
 ## 📝 RUNNING THE SCRIPT
 
-### ✅ 1. Make Script Executable
+### 1. Make Script Executable
 
 ```bash
 chmod +x iam_setup.sh
+```
+### 2. Install Optional Mail Dependency
+```bash
+sudo apt update
+sudo apt install mailutils -y
+```
 
-2. Install Optional Mail Dependency
-  - sudo apt update
-  - sudo apt install mailutils -y
-
-3. Execute the Script
-  - sudo ./iam_setup.sh users.txt
+### 3. Execute the Script
+```bash
+sudo ./iam_setup.sh users.txt
+```
 
 

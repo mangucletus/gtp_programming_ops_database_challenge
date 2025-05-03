@@ -3,9 +3,10 @@
 # IAM Setup Script
 # Author: Cletus Nehinlalei Mangu
 # Date: 2025-05-03
-# Description: Automates IAM user/group creation with logging, password policy, email notification
+# Description: This script automates IAM user/group creation with logging, password policy, and email notification
 
-LOGFILE="/home/cletusmangu/Desktop/gtp_programming_ops_database_challenge/bash_scripting_challenge_lab/iam_setup.log"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LOGFILE="$SCRIPT_DIR/iam_setup.log"
 TEMP_PASSWORD="ChangeMe123"
 
 # Function to log messages with timestamp

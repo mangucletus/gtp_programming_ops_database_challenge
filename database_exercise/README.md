@@ -79,7 +79,7 @@ Both Flask and FastAPI serve the same endpoints.
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
 - ![Workbench](screenshots/workbench_queries.png) – SQL Query Results  
 - ![Flask API](screenshots/flask_response.png) – Flask Endpoint Result  

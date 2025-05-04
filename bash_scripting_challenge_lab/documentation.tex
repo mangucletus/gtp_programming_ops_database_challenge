@@ -1,8 +1,8 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[draft]{graphicx}  % disables actual image inclusion
+% \usepackage[draft]{graphicx}  % disables actual image inclusion
 
-%\usepackage{graphicx}
+\usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{geometry}
@@ -14,7 +14,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{IAM Automation Lab}
-\lhead{GT Programming Ops}
+\lhead{GTP Programming and Ops Challenge}
 \cfoot{\thepage}
 
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
@@ -31,7 +31,7 @@
 }
 
 \title{\textbf{IAM Automation Lab Documentation}}
-\author{Your Name \\ \texttt{your.email@example.com} \\ GT Programming Ops Challenge}
+\author{Cletus Nehinlalei Mangu \\ \texttt{cletus.mangu@amalitechtraining.org} \\ GTP Programming and Ops Challenge}
 \date{\today}
 
 \begin{document}
@@ -39,7 +39,7 @@
 \maketitle
 
 \section*{Lab Overview}
-This lab aims to automate Identity and Access Management (IAM) tasks on a Linux machine using a Bash script. The script handles user and group provisioning, home directory configuration, password policies, and optional email notifications. All activities are logged for auditability.
+This lab aims to automate Identity and Access Management (IAM) tasks on a Linux machine using a Bash script. The script handles user and group provisioning, home directory configuration, password policies, and email notifications. All activities are logged for auditability.
 
 \section*{Objectives}
 \begin{itemize}
@@ -48,7 +48,7 @@ This lab aims to automate Identity and Access Management (IAM) tasks on a Linux 
   \item Apply password complexity and enforce password resets.
   \item Secure each user's home directory.
   \item Log all actions to a file.
-  \item Optionally send notification emails and validate password complexity.
+  \item Send notification emails and validate password complexity.
 \end{itemize}
 
 \section*{Environment}
@@ -59,12 +59,9 @@ This lab aims to automate Identity and Access Management (IAM) tasks on a Linux 
 \end{itemize}
 
 \section*{Input File Format}
-The script accepts a CSV file named \texttt{users.txt} in the following format:
+The script accepts a CSV file named \texttt{users.txt | users.csv} in the following format:
 \begin{lstlisting}
 username,fullname,group
-jdoe,John Doe,engineering
-asmith,Alice Smith,engineering
-mjones,Mike Jones,design
 \end{lstlisting}
 
 \begin{figure}[h!]
@@ -73,7 +70,11 @@ mjones,Mike Jones,design
   \caption{Sample users.txt format}
 \end{figure}
 
-\section*{Script Overview: \texttt{iam_setup.sh}}
+% \section*{Script Overview: \texttt{iam_setup.sh}}
+% \section*{Script Overview: \textnormal{\texttt{iam_setup.sh}}}
+\section*{\texorpdfstring{Script Overview: \texttt{iam\_setup.sh}}{Script Overview: iam_setup.sh}}
+
+
 
 \subsection*{Main Features}
 \begin{itemize}
@@ -82,8 +83,9 @@ mjones,Mike Jones,design
   \item Assigns temporary password and enforces reset.
   \item Validates password complexity.
   \item Locks down home directory permissions using \texttt{chmod 700}.
-  \item Sends optional email notifications to users.
-  \item Logs all actions to \texttt{iam_setup.log}.
+  \item Sends email notifications to users.
+  \item Logs all actions to \texttt{iam\_setup.log}.
+
 \end{itemize}
 
 \begin{figure}[h!]
@@ -119,7 +121,7 @@ sudo ./iam_setup.sh users.txt
 \section*{Logging and Password Enforcement}
 
 \subsection*{Logging}
-All actions are recorded in \texttt{iam_setup.log}:
+All actions are recorded in \texttt{iam\_setup.log}:
 \begin{lstlisting}
 [2025-05-03 14:20:12] Created group: engineering
 [2025-05-03 14:20:14] Created user: jdoe
@@ -165,7 +167,7 @@ chmod 700 /home/username
 \section*{Optional: Email Notification}
 
 \begin{lstlisting}
-echo "Welcome to the system, $FULLNAME." | mail -s "Account Created" $USERNAME@example.com
+echo "Welcome to the system, $FULLNAME." | mail -s "Account Created" $USERNAME@gmail.com
 \end{lstlisting}
 
 \begin{figure}[h!]
@@ -176,37 +178,27 @@ echo "Welcome to the system, $FULLNAME." | mail -s "Account Created" $USERNAME@e
 
 \section*{Project Directory Structure}
 \begin{lstlisting}
-iam_project/
-├── iam_setup.sh
-├── users.txt
-├── iam_setup.log
-├── README.md
-└── screenshots/
-    ├── users_txt_content.png
-    ├── script_in_terminal.png
-    ├── run_script.png
-    ├── password_policy.png
-    ├── log_output.png
-    ├── home_dir_permissions.png
-    └── email_notification.png
-\end{lstlisting}
+  bash_scripting_challenge_lab/
+  |-- iam_setup.sh
+  |-- users.txt
+  |-- iam_setup.log
+  |-- README.md
+  `-- screenshots/
+      |-- users_txt_content.png
+      |-- script_in_terminal.png
+      |-- run_script.png
+      |-- password_policy.png
+      |-- log_output.png
+      |-- home_dir_permissions.png
+      `-- email_notification.png
+  \end{lstlisting}
+  
+  
 
-\section*{Submission}
-\begin{itemize}
-  \item Push your project to GitHub with:
-    \begin{itemize}
-      \item Script file
-      \item users.txt
-      \item log file
-      \item screenshots
-      \item README.md and this LaTeX file
-    \end{itemize}
-  \item Submit the GitHub repository link via the official form.
-\end{itemize}
 
 \section*{Author}
-\textbf{Your Name} \\
-Email: \texttt{your.email@example.com} \\
+\textbf{Cletus Nehinlalei Mangu} \\
+Email: \texttt{cletus.mangu@amalitechtraining.org} \\
 GitHub: \url{https://github.com/mangucletus}
 
 \end{document}

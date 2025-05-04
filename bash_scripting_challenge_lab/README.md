@@ -72,4 +72,5 @@ sudo apt install mailutils -y
 sudo ./iam_setup.sh users.txt
 ```
 
+📄 [View Full Documentation (PDF)](documentation.pdf)
 

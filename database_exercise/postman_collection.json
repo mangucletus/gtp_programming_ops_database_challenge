@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "85a2bef9-7716-4159-9ec9-d2b0b321a550",
+		"name": "postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24586948"
+	},
+	"item": [
+		{
+			"name": "Top Customers by Spending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/top-customers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"top-customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monthly Sales Report (Only Shipped/Delivered)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/monthly-sales",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"monthly-sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products Never Ordered",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/products-never-ordered",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products-never-ordered"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Average Order Value by Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/avg-order-value-by-country",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"avg-order-value-by-country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Frequent Buyers (More Than One Order)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/frequent-buyers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"frequent-buyers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

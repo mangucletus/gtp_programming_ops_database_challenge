@@ -1,25 +1,24 @@
-
-[2025-05-03 23:11:41] Created group: engineering
-[2025-05-03 23:11:41] Created user: jdoe, Fullname: John Doe, Group: engineering
-[2025-05-03 23:11:41] Password set for jdoe
-[2025-05-03 23:11:41] Password reset on first login enforced for jdoe
-[2025-05-03 23:11:41] Permissions set to 700 on /home/jdoe
-[2025-05-03 23:11:41] Email sent to jdoe@gmail.com
-[2025-05-03 23:11:41] Group already exists: engineering
-[2025-05-03 23:11:41] Created user: asmith, Fullname: Alice Smith, Group: engineering
-[2025-05-03 23:11:41] Password set for asmith
-[2025-05-03 23:11:41] Password reset on first login enforced for asmith
-[2025-05-03 23:11:41] Permissions set to 700 on /home/asmith
-[2025-05-03 23:11:41] Email sent to asmith@gmail.com
-[2025-05-03 23:11:41] Created group: design
-[2025-05-03 23:11:41] Created user: mjones, Fullname: Mike Jones, Group: design
-[2025-05-03 23:11:41] Password set for mjones
-[2025-05-03 23:11:41] Password reset on first login enforced for mjones
-[2025-05-03 23:11:41] Permissions set to 700 on /home/mjones
-[2025-05-03 23:11:42] Email sent to mjones@gmail.com
-[2025-05-03 23:11:42] Created group: devops
-[2025-05-03 23:11:42] Created user: mangucletus, Fullname: Mangu Cletus, Group: devops
-[2025-05-03 23:11:42] Password set for mangucletus
-[2025-05-03 23:11:42] Password reset on first login enforced for mangucletus
-[2025-05-03 23:11:42] Permissions set to 700 on /home/mangucletus
-[2025-05-03 23:11:42] Email sent to mangucletus@gmail.com
+[2025-05-04 08:18:54] Created group: engineering
+[2025-05-04 08:18:54] Created user: jdoe, Fullname: John Doe, Group: engineering
+[2025-05-04 08:18:55] Password set for jdoe
+[2025-05-04 08:18:55] Password reset on first login enforced for jdoe
+[2025-05-04 08:18:55] Permissions set to 700 on /home/jdoe
+[2025-05-04 08:18:57] Email sent to jdoe@gmail.com
+[2025-05-04 08:18:57] Group already exists: engineering
+[2025-05-04 08:18:57] Created user: asmith, Fullname: Alice Smith, Group: engineering
+[2025-05-04 08:18:58] Password set for asmith
+[2025-05-04 08:18:58] Password reset on first login enforced for asmith
+[2025-05-04 08:18:58] Permissions set to 700 on /home/asmith
+[2025-05-04 08:19:01] Email sent to asmith@gmail.com
+[2025-05-04 08:19:01] Created group: design
+[2025-05-04 08:19:01] Created user: mjones, Fullname: Mike Jones, Group: design
+[2025-05-04 08:19:01] Password set for mjones
+[2025-05-04 08:19:01] Password reset on first login enforced for mjones
+[2025-05-04 08:19:01] Permissions set to 700 on /home/mjones
+[2025-05-04 08:19:04] Email sent to mjones@gmail.com
+[2025-05-04 08:19:04] Created group: devops
+[2025-05-04 08:19:04] Created user: mangucletus, Fullname: Mangu Cletus, Group: devops
+[2025-05-04 08:19:04] Password set for mangucletus
+[2025-05-04 08:19:04] Password reset on first login enforced for mangucletus
+[2025-05-04 08:19:04] Permissions set to 700 on /home/mangucletus
+[2025-05-04 08:19:07] Email sent to mangucletus@gmail.com

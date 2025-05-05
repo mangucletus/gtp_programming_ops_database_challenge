@@ -1,10 +1,10 @@
-# 🔐 IAM Automation with Bash on Linux
+# IAM Automation with Bash on Linux
 
 ## LAB OVERVIEW
 
 This lab demonstrates how to **automate Identity and Access Management (IAM)** tasks on a Linux system using a Bash script. The lab simulates a real-world system administrator task of provisioning multiple users and groups with strong security practices.
 
-### 🎯 Objectives
+### Objectives
 
 - Automate creation of users and groups from a CSV file.
 - Assign full names and group memberships.
@@ -54,7 +54,7 @@ This format ensures automation is done without user input during execution.
 
 ---
 
-## 📝 RUNNING THE SCRIPT
+## RUNNING THE SCRIPT
 
 ### 1. Make Script Executable
 
@@ -72,5 +72,5 @@ sudo apt install mailutils -y
 sudo ./iam_setup.sh users.txt
 ```
 
-📄 [View Full Documentation (PDF)](documentation.pdf)
+[View Full Documentation (PDF)](documentation.pdf)
 

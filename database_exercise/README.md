@@ -1,4 +1,4 @@
-# gtp_programming_ops_database_challenge (AWS RDS + Flask + FastAPI)
+# Database_challenge (AWS RDS + Flask + FastAPI)
 
 ---
 
@@ -86,8 +86,11 @@ Both Flask and FastAPI serve the same endpoints.
 ## Screenshots
 
 - ![Workbench](screenshots/workbench_queries.png) – SQL Query Results  
+
 - ![Flask API](screenshots/flask_response.png) – Flask Endpoint Result  
+
 - ![FastAPI](screenshots/fastapi_response.png) – FastAPI Endpoint  
+
 - ![Postman](screenshots/postman_api_docs.png) – API Docs in Postman  
 
 ---

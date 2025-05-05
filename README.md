@@ -1,4 +1,4 @@
-# Programming, Ops, and dDatabase Challenge
+# Programming, Ops, and Database Challenge
 
 Welcome to my portfolio repository containing two hands-on technical projects that demonstrate practical skills in **Linux Automation**, **Cloud Databases**, and **API development** using **Flask** and **FastAPI**.
 

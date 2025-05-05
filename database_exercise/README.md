@@ -1,6 +1,10 @@
 # gtp_programming_ops_database_challenge (AWS RDS + Flask + FastAPI)
 
-This project demonstrates a mini e-commerce analytics system built using **AWS RDS (MySQL)** as the backend database and two RESTful APIs developed with **Flask** and **FastAPI** to expose complex SQL queries. The APIs are documented using **Postman** for easy access.
+---
+
+## Overview
+
+This project demonstrates a database system built using **AWS RDS (MySQL)** as the backend database and two RESTful APIs developed with **Flask** and **FastAPI** to expose complex SQL queries. The APIs are documented using **Postman** for easy access.
 
 ---
 
@@ -9,7 +13,7 @@ This project demonstrates a mini e-commerce analytics system built using **AWS R
 - **Database**: MySQL on Amazon RDS
 - **Backend**: Python (Flask & FastAPI)
 - **API Tooling**: Postman
-- **Goal**: Analyze sales/customer data and expose analytics via APIs
+- **Goal**: To analyze sales/customer data and expose analytics via APIs
 - **Result**: Advanced SQL queries and API challenge solved in full detail
 
 ---
@@ -95,3 +99,5 @@ Both Flask and FastAPI serve the same endpoints.
 DevOps & Cloud Engineer at AmaliTech GH
 
 ---
+
+[View Full PDF Documentation](documentation.pdf)
